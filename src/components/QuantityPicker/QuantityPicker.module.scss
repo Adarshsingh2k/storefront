@@ -1,0 +1,41 @@
+.picker {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--c-surface);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 1.1rem;
+  color: var(--c-primary);
+  transition: background var(--t-fast), color var(--t-fast);
+
+  &:hover:not(:disabled) {
+    background: var(--c-bg);
+    color: var(--c-accent);
+  }
+
+  &:disabled {
+    color: var(--c-sold-out);
+    cursor: not-allowed;
+  }
+}
+
+.value {
+  min-width: 36px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--c-primary);
+  border-left: 1.5px solid var(--c-border);
+  border-right: 1.5px solid var(--c-border);
+  line-height: 36px;
+  display: block;
+}

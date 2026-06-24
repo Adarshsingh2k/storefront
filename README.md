@@ -1,7 +1,7 @@
 ## Setup
 
 ```bash
-git clone <repo-url>
+git clone 
 cd storefront
 npm install
 npm run dev      # http://localhost:5173
